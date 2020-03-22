@@ -89,11 +89,11 @@ class Reader:
             
             _current = {}
 
-            series_id = 'jodi-data//{}//{}//{}//index={}'.format(
+            series_id = 'jodi-data//{}//{}//{}//{}'.format(
                 doc['REF_AREA'],
                 doc['FLOW_BREAKDOWN'],
                 doc['ENERGY_PRODUCT'],
-                doc_list.index(doc)
+                doc['TIME_PERIOD']
             )
 
             points = [doc['TIME_PERIOD']]
